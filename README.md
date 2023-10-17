@@ -5,7 +5,7 @@
 1. Clone the project
 
 ```bash
-git clone https://github.com/UltiRequiem/flask-calculator.git
+git clone https://github.com/KiritiAryal/flask-calculator.git
 cd flask-calculator
 ```
 
