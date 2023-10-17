@@ -5,7 +5,7 @@ pipeline{
     environment{
         
         registry = "KiritiAryal/flask_docker"
-        registryCredential = 'KiritiAryal'        
+        registryCredential = '6a23ecdf-4838-46b9-8e1a-c90f296cb3f6'        
     }
     
     stages{
