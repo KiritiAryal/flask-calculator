@@ -18,7 +18,7 @@ pipeline{
              echo "Pushing..."
              dockerImage.push("0.0.7")
              dockerImage.push("latest")
-             echo "Pushed!"
+             echo "Pushed!!"
             }
           }
         }
