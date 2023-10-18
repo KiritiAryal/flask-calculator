@@ -1,6 +1,10 @@
 # Flask WebApp Calculator
 
-## Development setup
+## Runs on GCloud Run(for containers) on https://flask-docker-nzpgrzyxwa-uc.a.run.app/
+
+## Setup with CICD with Jenkins and Google Build
+
+## For Development setup
 
 1. Clone the project
 
