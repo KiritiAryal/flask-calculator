@@ -2,7 +2,7 @@ pipeline{
     agent any
     environment{
         IMAGE_NAME = "kiritiaryal/flask_docker"
-        REGISTRY_CREDENTIAL = 'docker-hub-credentials'        
+        // REGISTRY_CREDENTIAL = 'docker-hub-credentials'        
     }
     stages{
        stage('Building image') {
@@ -13,13 +13,13 @@ pipeline{
         }
        }
        stage('Deploy Image') {
-      steps{
-         script {
-            docker.withRegistry( '', ${REGISTRY_CREDENTIAL} ) {
+      container('docker'){
+            docker.withRegistry( '', 'docker-hub-credentials') {
+             echo "Pushing..."
             dockerImage.push("0.0.7")
             dockerImage.push("latest")
+            echo "Pushed!"
             }
-          }
         }
       }
     }
