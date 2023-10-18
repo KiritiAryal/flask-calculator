@@ -18,7 +18,7 @@ spec:
         run.googleapis.com/client-version: 451.0.0
     spec:
       containers:
-        - image: kiritiaryal/flask_docker:0.0.7
+        - image: kiritiaryal/flask_docker:latest
           ports:
             - name: http1
               containerPort: 3000
