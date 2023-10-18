@@ -13,13 +13,15 @@ pipeline{
         }
        }
        stage('Deploy Image') {
-      container('docker'){
-            docker.withRegistry( '', 'docker-hub-credentials') {
+      steps{
+         script {
+             docker.withRegistry( '', 'docker-hub-credentials') {
              echo "Pushing..."
-            dockerImage.push("0.0.7")
-            dockerImage.push("latest")
-            echo "Pushed!"
+             dockerImage.push("0.0.7")
+             dockerImage.push("latest")
+             echo "Pushed!"
             }
+          }
         }
       }
     }
