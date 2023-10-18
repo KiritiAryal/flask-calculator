@@ -1,9 +1,0 @@
-# # docker-compose.yaml
-# version: "3"
-
-# services:
-#   web:
-#     build: "."
-#     ports:
-#       - "3000:3000"
-#     image: kiritiaryal/flask_docker:0.0.8
