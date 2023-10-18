@@ -30,13 +30,6 @@
 node {
     def myImage
 
-    stage('Clone repository') {
-        /* Let's make sure we have the repository cloned to our workspace */
-        dir('.') {
-            git url: 'https://github.com/KiritiAryal/flask-calculator.git'
-        }
-    }
-
     stage('Build image') {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
