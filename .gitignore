@@ -3,4 +3,5 @@
 *cfg
 **/env/
 **/__pycache__/
-**/.vscode
+.vscode
+!.vscode/launch.json
