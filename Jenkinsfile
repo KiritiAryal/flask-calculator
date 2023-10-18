@@ -16,7 +16,7 @@ pipeline{
          script {
              docker.withRegistry( '', 'docker-hub-credentials') {
              echo "Pushing..."
-             dockerImage.push("0.0.7")
+             dockerImage.push("0.0.8")
              dockerImage.push("latest")
              echo "Pushed!!"
             }
