@@ -5,5 +5,5 @@ services:
   web:
     build: "."
     ports:
-      - "8080:8080"
+      - "3000:3000"
     image: kiritiaryal/flask_docker:0.0.8

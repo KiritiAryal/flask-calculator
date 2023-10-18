@@ -10,7 +10,7 @@ WORKDIR /app
 RUN pip install -r requirements.txt
 
 # expose the port 3000
-EXPOSE 8080
+EXPOSE 3000
 
 # copy every content from the local file to the image
 COPY . /app
