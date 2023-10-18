@@ -15,7 +15,7 @@ pipeline{
        stage('Deploy Image') {
       steps{
          script {
-            docker.withRegistry( '', REGISTRY_CREDENTIAL ) {
+            docker.withRegistry( '', ${REGISTRY_CREDENTIAL} ) {
             dockerImage.push("0.0.6")
             dockerImage.push("latest")
             }
